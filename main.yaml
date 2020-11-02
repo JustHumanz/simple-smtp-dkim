@@ -5,9 +5,9 @@
   - bngsudheer.centos_base
   - bngsudheer.opendkim
   vars:
-    postfix_myhostname: mail.skgobo.com
-    postfix_mydomain: skgobo.com
+    postfix_myhostname: mail.<domain name>
+    postfix_mydomain: <domain name>
     dkim_admin_email: Aldinsetiawan99@Gmail.com
-    dkim_selector: skgobo
+    dkim_selector: dkm_selector(just use you domain name without dot)
     dkim_domains:
-      - skgobo.com
+      - <domain name>
