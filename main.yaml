@@ -1,0 +1,13 @@
+---
+- hosts: Mail
+  roles:
+  - eggermontrob.mailserver
+  - bngsudheer.centos_base
+  - bngsudheer.opendkim
+  vars:
+    postfix_myhostname: mail.skgobo.com
+    postfix_mydomain: skgobo.com
+    dkim_admin_email: Aldinsetiawan99@Gmail.com
+    dkim_selector: skgobo
+    dkim_domains:
+      - skgobo.com
